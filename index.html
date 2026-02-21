@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet 16 Birthday Surprise</title>
+
+    <!-- Modern Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:wght@600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Floating particles background -->
+    <canvas id="particles-canvas" aria-hidden="true"></canvas>
+
+    <!-- Intro Section -->
+    <section class="section hero full-screen" id="intro">
+      <div class="container card fade-in">
+        <h1 class="typing-text" id="typing-target"></h1>
+        <button class="btn-glow" id="continue-btn">Tap to Continue 👑</button>
+      </div>
+    </section>
+
+    <!-- Slideshow Section -->
+    <section class="section" id="memories">
+      <div class="container fade-in">
+        <h2 class="section-title">Moments That Make You Shine ✨</h2>
+
+        <div class="slideshow card" aria-label="Birthday memories slideshow">
+          <img
+            class="slide active"
+            src="assets/images/memory-1.svg"
+            alt="Memory image 1"
+            loading="lazy"
+          />
+          <img
+            class="slide"
+            src="assets/images/memory-2.svg"
+            alt="Memory image 2"
+            loading="lazy"
+          />
+          <img
+            class="slide"
+            src="assets/images/memory-3.svg"
+            alt="Memory image 3"
+            loading="lazy"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Emotional Message Section -->
+    <section class="section" id="message">
+      <div class="container card fade-in">
+        <h2 class="section-title">A Message For You 💌</h2>
+        <!-- Edit this text in code whenever you want -->
+        <p id="emotional-message">
+          Even with all the distance between us, you still make my days brighter,
+          louder, and way more fun. Thank you for being my safe place, my chaos
+          partner, and the best friend who always understands me. I hope your 16th
+          year gives you everything your beautiful heart deserves.
+        </p>
+      </div>
+    </section>
+
+    <!-- Why You're Special Cards -->
+    <section class="section" id="special">
+      <div class="container fade-in">
+        <h2 class="section-title">Why You’re Special 🌸</h2>
+
+        <div class="cards-grid">
+          <article class="feature-card card">
+            <h3>Drama Queen Energy</h3>
+            <p>
+              You turn every boring moment into a movie scene and somehow make
+              life way more exciting.
+            </p>
+          </article>
+
+          <article class="feature-card card">
+            <h3>Savage Replies</h3>
+            <p>
+              Your comebacks are iconic. Quick, smart, and always delivered with
+              perfect timing.
+            </p>
+          </article>
+
+          <article class="feature-card card">
+            <h3>Soft Heart</h3>
+            <p>
+              Behind all the sass is one of the kindest souls ever. You love deeply,
+              and it shows.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Final Section -->
+    <section class="section full-screen" id="final">
+      <div class="container card final-card fade-in">
+        <h2 class="final-title">Happy 16th Birthday. Level 16 Unlocked.</h2>
+        <p class="final-subtitle">From your favorite online bestie ❤️</p>
+      </div>
+      <canvas id="confetti-canvas" aria-hidden="true"></canvas>
+    </section>
+
+    <!-- Optional soft music: muted first for browser autoplay rules -->
+    <audio id="bg-music" loop muted></audio>
+
+    <script src="script.js"></script>
+  </body>
+</html>
